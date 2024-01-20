@@ -18,10 +18,10 @@
 <h1 align="center">Laravel Client for Swyftpay</h1>
 
 <p align="center">
-    <a href="https://packagist.org/packages/mujhtech/sendchamp"><img src="http://poser.pugx.org/mujhtech/sendchamp/v" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/mujhtech/sendchamp"><img src="http://poser.pugx.org/mujhtech/sendchamp/v/unstable" alt="Latest Unstable Version"></a>
-    <a href="https://packagist.org/packages/mujhtech/sendchamp"><img src="http://poser.pugx.org/mujhtech/sendchamp/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/mujhtech/sendchamp"><img src="http://poser.pugx.org/mujhtech/sendchamp/license" alt="License"></a>
+    <a href="https://packagist.org/packages/swervpaydev/laravel"><img src="http://poser.pugx.org/swervpaydev/laravel/v" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/swervpaydev/laravel"><img src="http://poser.pugx.org/swervpaydev/laravel/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://packagist.org/packages/swervpaydev/laravel"><img src="http://poser.pugx.org/swervpaydev/laravel/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/swervpaydev/laravel"><img src="http://poser.pugx.org/swervpaydev/laravel/license" alt="License"></a>
 
 </p>
 
