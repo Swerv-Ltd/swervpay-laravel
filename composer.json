@@ -1,0 +1,49 @@
+{
+    "name": "swervpaydev/laravel",
+    "description": "Laravel Client for Swyftpay",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Swyftpay",
+        "Swervpay",
+        "Card",
+        "Issuing",
+        "Laravel",
+        "PHP",
+        "SDK",
+        "Laravel 10",
+        "Laravel 9",
+        "Laravel 8"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Swervpaydev\\Laravel\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swervpaydev\\Laravel\\SwervpaydevServiceProvider"
+            ],
+            "aliases": {
+                "Swyftpay": "Swervpaydev\\Laravel\\Facades\\Swyftpay"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Mujhtech",
+            "email": "mujeeb.muhideen@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "illuminate/support": "~6|~7|~8|^9.0|^10.0",
+        "php": "^7.2|^8.0",
+        "swervpaydev/sdk": "*"
+    }
+}
