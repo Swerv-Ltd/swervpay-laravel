@@ -2,7 +2,7 @@
 
 namespace Swervpaydev\Laravel;
 
-use Swervpaydev\SDK\Swyftpay;
+use Swervpaydev\SDK\Swervpay;
 use Illuminate\Support\ServiceProvider;
 use Swervpaydev\Laravel\Exceptions\SwervpaydevException;
 
@@ -70,7 +70,7 @@ class SwervpaydevServiceProvider extends ServiceProvider
                 $config['secret_key'] = $secretKey;
                 $config['business_id'] = $businessId;
 
-                return new Swyftpay($config);
+                return new Swervpay($config);
             }
         );
     }
