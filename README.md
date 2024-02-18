@@ -15,7 +15,7 @@
   </a>
 </div>
 
-<h1 align="center">Laravel Client for Swyftpay</h1>
+<h1 align="center">Laravel Client for Swervpay</h1>
 
 <p align="center">
     <a href="https://packagist.org/packages/swervpaydev/laravel"><img src="http://poser.pugx.org/swervpaydev/laravel/v" alt="Latest Stable Version"></a>
@@ -91,3 +91,7 @@ return [
     'business_id' => env('SWERVPAYDEV_BUSINESS_ID'),
 ];
 ```
+
+## Documentation
+
+See [docs for Laravel here](https://docs.swervpay.co/sdks/laravel)

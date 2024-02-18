@@ -1,6 +1,6 @@
 {
     "name": "swervpaydev/laravel",
-    "description": "Laravel Client for Swyftpay",
+    "description": "Laravel Client for Swervpay",
     "type": "library",
     "license": "MIT",
     "keywords": [
