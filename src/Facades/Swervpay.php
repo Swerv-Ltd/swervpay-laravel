@@ -5,16 +5,16 @@ namespace Swervpaydev\Laravel\Facades;
 use Illuminate\Support\Facades\Facade;
 
 
-class Swervpaydev extends Facade
+class Swervpay extends Facade
 {
 
     /**
-     * Get the facade accessor for the Swervpaydev facade.
+     * Get the facade accessor for the Swervpay facade.
      *
      * @return string
      */
     protected static function getFacadeAccessor()
     {
-        return 'swervpaydev';
+        return 'swervpay';
     }
 }

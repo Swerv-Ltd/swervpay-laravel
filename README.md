@@ -58,37 +58,37 @@ Or add the following line to the require block of your `composer.json` file.
 You can publish the configuration file using this command:
 
 ```bash
-$ php artisan vendor:publish --tag="swervpaydev-laravel-config"
+$ php artisan vendor:publish --tag="swervpay-laravel-config"
 ```
 
-A configuration-file named `swervpaydev.php` with some sensible defaults will be placed in your `config` directory:
+A configuration-file named `swervpay.php` with some sensible defaults will be placed in your `config` directory:
 
 ```php
 <?php
 
 
 /**
- * Configuration file for Swervpaydev.
+ * Configuration file for Swervpay.
  *
- * This file contains the configuration options for the Swervpaydev integration.
+ * This file contains the configuration options for the Swervpay integration.
  * The 'secret_key' and 'business_id' options are retrieved from the environment variables.
  */
 return [
 
     /**
-     * Configuration option for the secret key used in Swervpaydev.
-     * The value is retrieved from the environment variable SWERVPAYDEV_SECRET_KEY.
+     * Configuration option for the secret key used in Swervpay.
+     * The value is retrieved from the environment variable SWERVPAY_SECRET_KEY.
      *
      * @var string
      */
-    'secret_key' => env('SWERVPAYDEV_SECRET_KEY'),
+    'secret_key' => env('SWERVPAY_SECRET_KEY'),
 
     /**
-     * The business ID for SwervPayDev.
-     *
-     * This value is retrieved from the environment variable SWERVPAYDEV_BUSINESS_ID.
+     * The business ID for Swervpay.
+     * 
+     * This value is retrieved from the environment variable SWERVPAY_BUSINESS_ID.
      */
-    'business_id' => env('SWERVPAYDEV_BUSINESS_ID'),
+    'business_id' => env('SWERVPAY_BUSINESS_ID'),
 ];
 ```
 

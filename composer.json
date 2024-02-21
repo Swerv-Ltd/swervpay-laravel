@@ -9,6 +9,9 @@
         "Card",
         "Issuing",
         "Laravel",
+        "Payin",
+        "Identity",
+        "Payout",
         "PHP",
         "SDK",
         "Laravel 10",
@@ -22,6 +25,18 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
@@ -42,8 +57,27 @@
     "minimum-stability": "dev",
     "require": {
         "ext-json": "*",
-        "illuminate/support": "~6|~7|~8|^9.0|^10.0",
-        "php": "^7.2|^8.0",
+        "laravel/framework": "^9.46.0|^10.34.2|^11.0",
+        "php": "^8.1.0",
         "swervpaydev/sdk": "dev-main"
+    },
+    "require-dev": {
+        "laravel/pint": "dev-main",
+        "pestphp/pest": "3.x-dev",
+        "pestphp/pest-plugin-arch": "3.x-dev",
+        "phpstan/phpstan": "2.0.x-dev",
+        "symfony/var-dumper": "7.1.x-dev"
+    },
+    "scripts": {
+        "lint": "pint -v",
+        "refactor": "rector --debug",
+        "test:lint": "pint --test -v",
+        "test:types": "phpstan analyse --ansi",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
     }
 }

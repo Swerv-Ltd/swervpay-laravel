@@ -30,41 +30,41 @@ class SwervpaydevServiceProvider extends ServiceProvider
 
 
     /**
-     * Boot the publishing functionality for the Swervpaydev service provider.
+     * Boot the publishing functionality for the Swervpay service provider.
      *
-     * This method is responsible for publishing the configuration file for the Swervpaydev package
+     * This method is responsible for publishing the configuration file for the Swervpay package
      * when running in the console. It publishes the configuration file to the Laravel config directory.
      */
     protected function bootPublishing()
     {
         if ($this->app->runningInConsole()) {
-            $config = dirname(__DIR__) . '/config/swervpaydev.php';
+            $config = dirname(__DIR__) . '/config/swervpay.php';
 
             $this->publishes(
                 [
-                    $config => $this->app->configPath('swervpaydev.php'),
+                    $config => $this->app->configPath('swervpay.php'),
                 ],
-                'swervpaydev-laravel-config'
+                'swervpay-laravel-config'
             );
         }
     }
 
 
     /**
-     * Register the Swervpaydev service provider.
+     * Register the Swervpay service provider.
      *
      * @return void
      */
     public function register()
     {
         $this->app->singleton(
-            'swervpaydev',
+            'swervpay',
             function ($app) {
-                $secretKey = config('swervpaydev.secret_key');
-                $businessId = config('swervpaydev.business_id');
+                $secretKey = config('swervpay.secret_key');
+                $businessId = config('swervpay.business_id');
 
                 if (!is_string($secretKey) || empty($secretKey) || !is_string($businessId) || empty($businessId)) {
-                    throw new SwervpaydevException('The Swervpaydev secret key and business id must be a string.');
+                    throw new SwervpaydevException('The Swervpay secret key and business id must be a string.');
                 }
 
                 $config['secret_key'] = $secretKey;
@@ -83,6 +83,6 @@ class SwervpaydevServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['swervpaydev'];
+        return ['swervpay'];
     }
 }

@@ -2,16 +2,21 @@
 
 use Illuminate\Contracts\Foundation\Application;
 
-if (!function_exists("swervpaydev")) {
-
+// Check if the function "swervpay" already exists
+if (!function_exists("swervpay")) {
 
     /**
-     * Returns an instance of the 'swervpaydev' service container binding.
+     * swervpay function
      *
-     * @return Application|mixed
+     * This function is used to get an instance of the 'swervpay' service container binding.
+     * It uses the Laravel's service container to make an instance of 'swervpay'.
+     * If the 'swervpay' service is not bound in the container, it will throw an exception.
+     *
+     * @return Application|mixed An instance of the 'swervpay' service container binding.
      */
-    function novu()
+    function swervpay()
     {
-        return app()->make('swervpaydev');
+        // Use Laravel's service container to make an instance of 'swervpay'
+        return app()->make('swervpay');
     }
 }
